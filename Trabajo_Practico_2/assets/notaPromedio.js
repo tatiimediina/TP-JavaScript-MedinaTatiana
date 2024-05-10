@@ -4,10 +4,10 @@ let nota3 = parseInt(prompt("Ingrese la nota del tercer trimestre:"));
 
 
 if (isNaN(nota1) || isNaN(nota2)||isNaN(nota3) || nota1 <=0 || nota2<=0 ||nota3<=0){
-    console.log("Ingrese un número válido por favor")
+    console.log("Ingrese un número válido por favor");
 } else if (nota1 >=1  && nota1 <=10 && nota2 >=1  && nota2 <=10 && nota3 >=1  && nota3<=10 ){
     let promedio = (nota1+nota2+nota3)/3;
-    console.log(`Su promedio es de : ${promedio}`)
+    console.log(`Su promedio es de : ${promedio}`);
     switch (true) {
         case promedio >= 1 && promedio <4:
             console.log("Nota Insuficiente");
